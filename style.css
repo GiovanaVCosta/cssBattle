@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*quadrado maoir*/
+.quadrado{
+   background-color: #62374e;
+   height: 400px;
+   width: 500px; 
+   display: grid;
+   grid-template-areas: "p1 p2" "p3 p4";
+   grid-template-columns: 4fr 2fr;
+}
+/* um pai de tods quadrados, depois separei por numeros*/
+.qd{
+    background-color: #fdc57b;
+    margin: 70px;
+    width: 60px;
+    height: 60px;
+}
+/* numerei os quadrados para pegar as referencias do "pai", e tambem para posicionar o grid*/
+.qd1{
+    grid-area: p1;
+}
+.qd2{
+    grid-area: p2;
+}
+.qd3{
+    grid-area: p3;
+}
+.qd4{
+    grid-area: p4;
+}
